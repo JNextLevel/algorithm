@@ -1,5 +1,5 @@
 # algorithm
 algorithm study
 
-
-알고리즘
+{이름}
+ㄴ {주차}
