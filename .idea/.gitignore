@@ -2,4 +2,29 @@
 /shelf/
 /workspace.xml
 /*.xml
-/out/
+
+# Java template
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# macOs template
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Intellij project files
+.idea.idea/*.xml
+*.iml
+out
+gen
+build
+rebel.xml
+
+# Compliled files
+/target/
+**/target
+/example/
