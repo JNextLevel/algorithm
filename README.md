@@ -9,7 +9,7 @@ git clone 후 프로젝트를 인식 못하는 경우가 있는데 이때는
 
 File - Project Structure 설정 접속 후 Modules에 + 버튼을 이용해 수동으로 추가 해주면 된다.
 
-`+ 버튼` > `Import Module` > `\algorithm 폴더 경로 선택` > `Next` 반복 > `(가끔 Overwrite를 묻는게 나오는데 덮어 씌워 준다)` > `Create` > `OK`
+`+ 버튼` > `Import Module` > `\algorithm 폴더 경로 선택` > `Next` 반복 > `Create` > `OK`
 
 Module 설정 후 Source 탭과 Paths 탭 참고
 
