@@ -1,4 +1,4 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.*;
 import java.util.*;

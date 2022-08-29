@@ -1,28 +1,37 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.*;
 import java.util.*;
 
-public class 백준_17298오큰수_hunojung {
+public class 백준_17299오등큰수_hunojung {
         public static void main (String[]z) throws Exception{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             StringBuilder sb = new StringBuilder();
+
 
             int N = Integer.parseInt(br.readLine());
             StringTokenizer st = new StringTokenizer(br.readLine());
 
             Stack<Integer> stack = new Stack<>();
+            Map<Integer,Integer> map = new HashMap<>();
             int[] nums = new int[N];
 
             for(int i=0;i<N;i++){
                 nums[i] = Integer.parseInt(st.nextToken());
+                map.put(nums[i],map.getOrDefault(nums[i], 0)+1);
             }
 
             for (int i = N-1; i > -1; i--) {
                 int now = nums[i];
+                int now_count = map.get(now);
 
-                while(!stack.isEmpty() && stack.peek()<=now) {
-                    stack.pop();
+                while(!stack.isEmpty()) {
+                    int next_count = map.get(stack.peek());
+
+                    if(now_count >= next_count)
+                        stack.pop();
+                    else
+                        break;
                 }
 
                 if(stack.isEmpty()) {
@@ -31,15 +40,14 @@ public class 백준_17298오큰수_hunojung {
                     nums[i] = stack.peek();
                 }
 
-                if(i>0 && nums[i-1] < now) {
-                    stack.push(now);
+                if(i>0) {
+                    int count = map.get(nums[i-1]);
+                    if(now_count > count)stack.push(now);
                 }
             }
 
             for (int i = 0; i < N; i++) {
-                sb.append(nums[i]);
-
-                if(i<N-1)sb.append(" ");
+                sb.append(nums[i]).append(" ");
             }
 
             System.out.println(sb);
