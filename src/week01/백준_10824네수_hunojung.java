@@ -1,10 +1,10 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class P10824 {
+public class 백준_10824네수_hunojung {
 
     public static void main (String[]z) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

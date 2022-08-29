@@ -1,11 +1,10 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Collections;
 
-public class P11656 {
+public class 백준_11656접미사배열_hunojung {
     public static void main (String[]z) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String string = br.readLine();

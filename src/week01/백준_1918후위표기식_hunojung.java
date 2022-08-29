@@ -1,11 +1,10 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
-import java.util.StringTokenizer;
 
-public class P01918 {
+public class 백준_1918후위표기식_hunojung {
     static String test_case = "1: A*B*C*D\n" +
             "answer: AB*C*D*\n" +
             "#2: A\n" +

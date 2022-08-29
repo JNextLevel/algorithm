@@ -1,10 +1,10 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class P01935 {
+public class 백준_1935호위표기식2_hunojung {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());

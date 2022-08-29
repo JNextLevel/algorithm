@@ -1,9 +1,9 @@
-package hunojung.boj.data_structure;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class P11655 {
+public class 백준_11655ROT13_hunojung {
     public static void main (String[]z) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
