@@ -1,13 +1,11 @@
-package hunojung.programmers.algorithm_kit.stack_queue;
+package week01;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Stack;
 
-public class 같은숫자는싫어 {
+public class 프로그래머스_같은숫자는싫어_hunojung {
     public static void main(String[] args) {
 //        int[] answer = new 같은숫자는싫어().solution(new int[] {1,1,3,3,0,1,1});
-        int[] answer = new 같은숫자는싫어().solution(new int[] {4,4,4,3,3});
+        int[] answer = new 프로그래머스_같은숫자는싫어_hunojung().solution(new int[] {4,4,4,3,3});
         for(int num : answer) System.out.print(num+" ");
     }
 

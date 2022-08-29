@@ -1,16 +1,16 @@
-package hunojung.programmers.algorithm_kit.stack_queue;
+package week01;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class 기능개발 {
+public class 프로그래머스_기능개발_hunojung {
 
     public static void main(String[] args) throws Exception {
         int[] arr1 = {95, 90, 99, 99, 80, 99};
         int[] arr2 = {1, 1,1,1,1,1};
-        int[] result = new 기능개발().solution2(arr1, arr2);
+        int[] result = new 프로그래머스_기능개발_hunojung().solution2(arr1, arr2);
         for(int num : result){
             System.out.print(num+" ");
         }
