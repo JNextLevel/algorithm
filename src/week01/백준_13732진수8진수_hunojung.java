@@ -1,9 +1,9 @@
-package hunojung.boj.math;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class P01373 {
+public class 백준_13732진수8진수_hunojung {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

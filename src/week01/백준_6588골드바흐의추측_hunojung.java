@@ -1,10 +1,10 @@
-package hunojung.boj.math;
+package week01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class P06588 {
+public class 백준_6588골드바흐의추측_hunojung {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
