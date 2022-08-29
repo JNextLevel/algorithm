@@ -3,7 +3,7 @@ package hunojung.boj.data_structure;
 import java.io.*;
 import java.util.*;
 
-public class P01406 {
+public class 백준_1406에디터_hunojung {
         public static void main (String[]z) throws Exception{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             StringBuilder sb = new StringBuilder();

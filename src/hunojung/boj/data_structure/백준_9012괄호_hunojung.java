@@ -1,9 +1,8 @@
 package hunojung.boj.data_structure;
 
 import java.io.*;
-import java.util.*;
 
-public class P09012 {
+public class 백준_9012괄호_hunojung {
     public static void main (String[]z) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();

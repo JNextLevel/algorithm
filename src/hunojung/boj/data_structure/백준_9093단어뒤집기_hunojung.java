@@ -3,7 +3,7 @@ package hunojung.boj.data_structure;
 import java.io.*;
 import java.util.*;
 
-public class P09093
+public class 백준_9093단어뒤집기_hunojung
 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
