@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class 백준_15654N과M5_hunojung {
+public class 백준_15655N과M6_hunojung {
     static StringBuilder sb;
     static int[] arr, temp_arr;
     static boolean[] used;
@@ -25,13 +25,13 @@ public class 백준_15654N과M5_hunojung {
         Arrays.sort(arr);
 
         temp_arr = new int[M];
-        back_tracking(0);
+        back_tracking(0,0);
         System.out.println(sb);
         br.close();
         System.exit(0);
     }
 
-    static void back_tracking(int idx){
+    static void back_tracking(int start,int idx){
         if(idx == M){
             for(int i=0;i<M;i++){
                 sb.append(temp_arr[i]+" ");
@@ -40,11 +40,11 @@ public class 백준_15654N과M5_hunojung {
             return;
         }
 
-        for(int i=0;i<N;i++){
+        for(int i=start;i<N;i++){
             if(!used[i]){
                 used[i] = true;
                 temp_arr[idx] = arr[i];
-                back_tracking(idx+1);
+                back_tracking(i+1,idx+1);
                 used[i] = false;
             }
         }

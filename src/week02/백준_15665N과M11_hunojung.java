@@ -5,10 +5,9 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class 백준_15654N과M5_hunojung {
+public class 백준_15665N과M11_hunojung {
     static StringBuilder sb;
     static int[] arr, temp_arr;
-    static boolean[] used;
     static int N,M;
     public static void main (String[]z) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,7 +16,6 @@ public class 백준_15654N과M5_hunojung {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         arr = new int[N];
-        used = new boolean[N];
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
@@ -39,14 +37,14 @@ public class 백준_15654N과M5_hunojung {
             sb.append("\n");
             return;
         }
-
+        int before = 0;
         for(int i=0;i<N;i++){
-            if(!used[i]){
-                used[i] = true;
+            if(before!=arr[i]) {
+                before = arr[i];
                 temp_arr[idx] = arr[i];
-                back_tracking(idx+1);
-                used[i] = false;
+                back_tracking(idx + 1);
             }
         }
     }
 }
+
